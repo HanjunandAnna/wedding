@@ -240,10 +240,10 @@ $(document).ready(function () {
 /********************** Extras **********************/
 
 // Google map
-function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
+function initMaps() {
+    var location = {lat:51.20721847365704, lng: 6.475287636983465};
+    var map = new google.maps.Map(document.getElementById('map-canvas-de'), {
+        zoom: 12,
         center: location,
         scrollwheel: false
     });
@@ -252,21 +252,20 @@ function initMap() {
         position: location,
         map: map
     });
-}
 
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
+    var location = {lat:37.5591972, lng: 126.9947548};
+    var map2 = new google.maps.Map(document.getElementById('map-canvas-kr'), {
+        zoom: 13,
+        center: location,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
+    var marker2 = new google.maps.Marker({
+        position: location,
+        map: map2
     });
 }
+
 
 // alert_markup
 function alert_markup(alert_type, msg) {
