@@ -1,6 +1,5 @@
 from glob import glob
 
-
 def gen_template(img_file_name):
     new_name = img_file_name.replace('jpeg', 'jpg')
     html_str = """<div class="col-md-2">"""
